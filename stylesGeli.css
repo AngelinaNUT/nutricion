@@ -5,7 +5,7 @@
 
 .banner {
     background-color: midnightblue;
-    min-height: 91vh;
+    min-height: 93vh;
     margin-bottom: 15px;
 }
 
@@ -14,22 +14,24 @@
 }
 
 #whoIAm {
-    background-image: url(/turnos.jpg);
+    /* background-image: url(/turnos.jpg); */
+    background-image: url(/nutricion/turnos.jpg);
     background-size: 100%;
     background-position: 0%;
     background-repeat: no-repeat;
 }
 
 #virtual {
-    background-image: url(/virtual.jpg);
+    /* background-image: url(/virtual.jpg); */
+    background-image: url(/nutricion/virtual.jpg);
     background-size: 100%;
     background-position: 0%;
     background-repeat: no-repeat;
-
 }
 
 #health {
-    background-image: url(/health.jpg);
+    /* background-image: url(/health.jpg);     */
+    background-image: url(/nutricion/health.jpg);
     background-size: 100%;
     background-position: 0%;
     background-repeat: no-repeat;
