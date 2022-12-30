@@ -22,7 +22,7 @@
   z-index: 10;
   padding: 10px;
   border-radius: 15px 15px 15px 15px;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, .5);
 }
 
 .carousel-caption p {
@@ -102,27 +102,24 @@
 
 @media (max-width: 1110px) {
   #whoIAm {
-    /* background-image: url(/turnos.jpg); */
-    background-image: url(/nutricion/turnos.jpg);
+    background-image: url(https://angelinanut.github.io/nutricion/turnos.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+  }
 
-#virtual {
-    /* background-image: url(/virtual.jpg); */
-    background-image: url(/nutricion/virtual.jpg);
+  #virtual {
+    background-image: url(https://angelinanut.github.io/nutricion/virtual.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-}
+  }
 
-#health {
-    /* background-image: url(/health.jpg); */
-    background-image: url(/nutricion/health.jpg);
+  #health {
+    background-image: url(https://angelinanut.github.io/nutricion/health.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+  }
 }
