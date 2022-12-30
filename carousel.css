@@ -32,7 +32,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 91vh;
+  height: 93vh;
 }
 
 .carousel-item>img {
@@ -102,14 +102,16 @@
 
 @media (max-width: 862px) {
   #whoIAm {
-    background-image: url(/turnos.jpg);
+    /* background-image: url(/turnos.jpg); */
+    background-image: url(/nutricion/turnos.jpg);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
 }
 
 #virtual {
-    background-image: url(/virtual.jpg);
+    /* background-image: url(/virtual.jpg); */
+    background-image: url(/nutricion/virtual.jpg);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
@@ -117,7 +119,8 @@
 }
 
 #health {
-    background-image: url(/health.jpg);
+    /* background-image: url(/health.jpg); */
+    background-image: url(/nutricion/health.jpg);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
