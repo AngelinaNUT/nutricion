@@ -32,7 +32,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 91vh;
+  height: 93vh;
 }
 
 .carousel-item>img {
