@@ -17,7 +17,7 @@
     /* background-image: url(/turnos.jpg); */
     background-image: url(/nutricion/turnos.jpg);
     background-size: 100%;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -25,7 +25,7 @@
     /* background-image: url(/virtual.jpg); */
     background-image: url(/nutricion/virtual.jpg);
     background-size: 100%;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -33,7 +33,7 @@
     /* background-image: url(/health.jpg);     */
     background-image: url(/nutricion/health.jpg);
     background-size: 100%;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 

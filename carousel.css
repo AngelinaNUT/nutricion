@@ -100,12 +100,12 @@
   }
 }
 
-@media (max-width: 862px) {
+@media (max-width: 1110px) {
   #whoIAm {
     /* background-image: url(/turnos.jpg); */
     background-image: url(/nutricion/turnos.jpg);
     background-size: cover;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -113,7 +113,7 @@
     /* background-image: url(/virtual.jpg); */
     background-image: url(/nutricion/virtual.jpg);
     background-size: cover;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
@@ -122,7 +122,7 @@
     /* background-image: url(/health.jpg); */
     background-image: url(/nutricion/health.jpg);
     background-size: cover;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 }
