@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnera</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AngelinaNUT</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
 
-    <link href="/nutricion/stylesGeli.css" rel="stylesheet">
-    <link href="/stylesGeli.css" rel="stylesheet">
+    <link href="https://angelinanut.github.io/nutricion/stylesGeli.css" rel="stylesheet">
+    <link href="https://angelinanut.github.io/nutricion/carousel.css" rel="stylesheet">
+
+    <!-- <link href="/stylesGeli.css" rel="stylesheet"> 
+    <link href="/carousel.css" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
     <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/e1212d5367.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha384-qz3+8n0eRjQ2tC5ag5H5F5aZ1gV3av5mwF+bX9fCVdC/YO7o/A4ukus+1pVwlyPP" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div>
-        <h2>Turnera</h2>
-        <table>
-            <th>
-                <tr>Lunes</tr>
-                <tr>Martes</tr>
-                <tr>Miércoles</tr>
-                <tr>Jueves</tr>
-                <tr>Viernes</tr>
-            </th>
-            <ol>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-            </ol>            
-        </table>
-    </div>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="#">AngelinaNUT</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navegador">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recetario">Recetarios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="texto">
+            <br>
+            <div class="container-fluid" id="recetario">
+                <h2>Turnos</h2>
+                <!-- ACA IRÍA EL CALENDLY DE LA GELI -->
+                <iframe id="turn" src="https://calendly.com/fwegher/consulta-profesional?month=2023-02" 
+                frameborder="0" ></iframe>
+            </div>
+        </div>
+        <br>
+        <!-- CONTACTO -->
+        <br>
+        <div class="container-fluid">
+            <div class="contacto" id="contacto">
+                <h2>Contacto</h2>
+                <form action="https://formspree.io/f/mvoykjzp" method="POST">
+                    <label>
+                        <p>Su correo:</p>
+                        <input type="email" name="email" placeholder="Coloque aquí su email" required
+                            title="Debe ser un correo válido">
+                    </label>
+                    <label>
+                        <p>Mensaje:</p>
+                        <textarea name="message" placeholder="Coloque aquí su mensaje" required></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="weather-widget"></div>
+
+    </main>
+
+    <footer style="background-color: #d9d9d9; padding-top: 50px;">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copyright-brief">
+                            <p>Copyright © <a href="http://AngelinaNUT.github.io/nutricion/">AngelinaNUT</a> All rights
+                                reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right">Realizado por <a href="http://cpetruzzo.github.io/DisenioWeb/"
+                                class="dema" target="_blank">CPetruzzo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/angelina.nut/"><i class="fab fa-instagram"></i></a>
+            <!-- Agrega aquí más íconos de redes sociales -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+
+    <script src="modal.js"></script>
+    <script src="weather.js"></script>
+
 </body>
+
 </html>

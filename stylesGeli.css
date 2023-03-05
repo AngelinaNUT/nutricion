@@ -417,3 +417,45 @@ ol {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    height: 1em !important;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons i {
+    font-size: 50px;
+    color: #555;
+}
+
+.social-icons i:hover {
+    color: #0077B5;
+    /* Color de hover de LinkedIn */
+}
+
+#weather-widget {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  /* Estilo para el texto "próximamente" */
+  .coming-soon {
+    color: green;
+    font-weight: bold;
+  }
