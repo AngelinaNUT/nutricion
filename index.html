@@ -9,6 +9,8 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
 
+    <link href="styles.css" rel="stylesheet">
+
     <link href="https://angelinanut.github.io/nutricion/stylesGeli.css" rel="stylesheet">
     <link href="https://angelinanut.github.io/nutricion/carousel.css" rel="stylesheet">
 
@@ -20,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
@@ -31,7 +34,8 @@
 
     <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/e1212d5367.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-qz3+8n0eRjQ2tC5ag5H5F5aZ1gV3av5mwF+bX9fCVdC/YO7o/A4ukus+1pVwlyPP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha384-qz3+8n0eRjQ2tC5ag5H5F5aZ1gV3av5mwF+bX9fCVdC/YO7o/A4ukus+1pVwlyPP" crossorigin="anonymous">
 
     <link rel="icon" type="image/png" href="iconAngelinaNUT.png">
 
@@ -43,7 +47,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <h1 class="navbar-brand" href="#"><img height="30px" src="iconAngelinaNUT.png" alt="logo">  AngelinaNUT</h1>
+                <h1 class="navbar-brand" href="#"><img height="30px" src="iconAngelinaNUT.png" alt="logo"></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +65,13 @@
                             <a class="nav-link" href="#recetario">Recetarios</a>
                         </li>
                     </ul>
+                    <!-- Modal trigger button -->
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#modalId" disabled>
+                        Proximamente - Nuestros servicios!
+                    </button>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -81,20 +91,20 @@
                         <svg class="bd-placeholder-img" id="whoIAm" width="100%" height="100%"
                             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
                             focusable="false">
-
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h1>¿Quién soy?</h1>
-                                    <p id="font1">Mi nombre es Angelina Pérez y soy Licenciada en Nutrición egresada de
-                                        la
-                                        Universidad Nacional del Litoral. Te acompaño para que mejores tu calidad de
-                                        vida.
-                                        No dudes en contactarte por cualquier consulta.
-                                    </p>
-                                    <p><a class="btn btn-lg btn-primary" href="#contacto" role="button">Contactate
-                                            conmigo</a></p>
-                                </div>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>¿Quién soy?</h1>
+                                <p id="font1">Mi nombre es Angelina Pérez y soy Licenciada en Nutrición egresada de
+                                    la
+                                    Universidad Nacional del Litoral. Te acompaño para que mejores tu calidad de
+                                    vida.
+                                    No dudes en contactarte por cualquier consulta.
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="#contacto" role="button">Contactate
+                                        conmigo</a></p>
                             </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <svg class="bd-placeholder-img" id="health" width="100%" height="100%"
@@ -123,7 +133,7 @@
                                 <h1>Atención Online y Presencial</h1>
                                 <p>Vía google meet, para facilitarte el proceso. Entendemos las dificultades del día a
                                     día y lo difícil que se puede volver tener tiempo para la salud.</p>
-                                    <p class="coming-soon">Próximamente</p>
+                                <p class="coming-soon">Próximamente</p>
                                 </p>
                             </div>
                         </div>
@@ -242,6 +252,124 @@
             </div>
         </div>
 
+
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="announce ani">
+                        <div class="content" id="bounce-content" style="flex-direction: column;">
+                            <div id="bounce-top" style="background-color:#fff8;
+                  ;">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <img id="announce-closefb3b915e40ee" class="close" src="close.svg">
+                                </button>
+
+                                <div class="premium-tag" title="premium"><img src="premium.svg"></div>
+
+                                <h1 class="top-30">¡Fijate nuestros servicios!</h1>
+                                <p class="top-20" style="text-align:left;">Tendrás acceso a mucho material y consultas,
+                                    solo
+                                    selecciona la
+                                    que más se adapte a tus necesidades y comienza a disfrutar de una vida sana cuanto
+                                    antes!</p>
+
+                            </div>
+
+                            <section class="paywal-plan"
+                                style="padding:40px;background:linear-gradient(180deg, #00000000 0%, #00000000 10%, #00000010 100%)">
+
+                                <div id="subscribe-plus" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="plus-icon.svg" alt="plus icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Ya sos paciente?</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">Consulta Virtual
+                                                o
+                                                Presencial</p>
+                                            <div style="font-size: 36px; line-height: normal;">$2000</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Pedí tu turno</div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="subscribe-premium" class="plan popular">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-header">
+                                            Más popular
+                                        </div>
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="premium-icon.svg" alt="premium icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Primera consulta nutricional</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Nos presentamos </li>
+                                                <li> Anamnesis </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2500</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big w-100 top-30" style="background: #019ECF;">
+                                                Comenzá ahora
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="subscribe-team" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="team-icon.svg" alt="team icon">
+                                                <h1 class="text-capitalize">Plan Alimentario</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Individualizado y adaptado a tu condición de salud </li>
+                                                <li> Recetas - Fotos - Tips</li>
+                                                <li> Explicación de las recomendaciones </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2850</div>
+                                            <div style="font-size: 16px; line-height: normal;">/plan</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Solicitalo ya</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <p class="center" style="padding:10px;">No estas del todo seguro/a? Visitá nuestra <a
+                                    href="/pricing" class="anchor" target="_blank" style="color: #019ECF;">política</a>
+                                para más información.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer style="background-color: #d9d9d9; padding-top: 50px;">
@@ -261,11 +389,10 @@
                 </div>
             </div>
         </div>
-        <div class="social-icons">
+        <!-- <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/angelina.nut/"><i class="fab fa-instagram"></i></a>
-            <!-- Agrega aquí más íconos de redes sociales -->
-        </div>
+        </div> -->
     </footer>
 
     <!-- Bootstrap JS -->

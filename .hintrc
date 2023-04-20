@@ -4,6 +4,25 @@
   ],
   "hints": {
     "disown-opener": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "user-select",
+          "height: fit-content",
+          "backdrop-filter",
+          "appearance",
+          "overflow-wrap: anywhere",
+          "scroll-behavior",
+          "scrollbar-width",
+          "text-justify",
+          "min-width: fit-content",
+          "width: fit-content",
+          "min-height: fit-content",
+          "-webkit-tap-highlight-color"
+        ]
+      }
+    ]
   }
 }

@@ -9,17 +9,20 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
 
+    <link href="styles.css" rel="stylesheet">
+
     <link href="https://angelinanut.github.io/nutricion/stylesGeli.css" rel="stylesheet">
     <link href="https://angelinanut.github.io/nutricion/carousel.css" rel="stylesheet">
 
-    <!-- <link href="/stylesGeli.css" rel="stylesheet"> 
-    <link href="/carousel.css" rel="stylesheet"> -->
+    <link href="stylesGeli.css" rel="stylesheet">
+    <!-- <link href="/carousel.css" rel="stylesheet">  -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
@@ -34,6 +37,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha384-qz3+8n0eRjQ2tC5ag5H5F5aZ1gV3av5mwF+bX9fCVdC/YO7o/A4ukus+1pVwlyPP" crossorigin="anonymous">
 
+    <link rel="icon" type="image/png" href="iconAngelinaNUT.png">
+
 </head>
 
 <body>
@@ -42,7 +47,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <h1 class="navbar-brand" href="#">AngelinaNUT</h1>
+                <h1 class="navbar-brand" href="#"><img height="30px" src="iconAngelinaNUT.png" alt="logo"></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +56,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navegador">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="https://angelinanut.github.io/nutricion/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
@@ -60,7 +65,13 @@
                             <a class="nav-link" href="#recetario">Recetarios</a>
                         </li>
                     </ul>
+                    <!-- Modal trigger button -->
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#modalId">
+                        Mirá nuestros servicios!
+                    </button>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -70,15 +81,132 @@
         <div class="texto">
             <br>
             <div class="container-fluid" id="recetario">
-                <h2>Turnos</h2>
+                <!-- <h2>Turnos</h2> -->
                 <!-- ACA IRÍA EL CALENDLY DE LA GELI -->
-                <iframe id="turn" src="https://calendly.com/fwegher/consulta-profesional?month=2023-02" 
+                <iframe id="turn" src="https://calendly.com/angelina-nut/consulta-nutricional" 
                 frameborder="0" ></iframe>
             </div>
         </div>
         <br>
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="announce ani">
+                        <div class="content" id="bounce-content" style="flex-direction: column;">
+                            <div id="bounce-top" style="background-color:#fff8;
+                  ;">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <img id="announce-closefb3b915e40ee" class="close" src="close.svg">
+                                </button>
+
+                                <div class="premium-tag" title="premium"><img src="premium.svg"></div>
+
+                                <h1 class="top-30">¡Fijate nuestros servicios!</h1>
+                                <p class="top-20" style="text-align:left;">Tendrás acceso a mucho material y consultas,
+                                    solo
+                                    selecciona la
+                                    que más se adapte a tus necesidades y comienza a disfrutar de una vida sana cuanto
+                                    antes!</p>
+
+                            </div>
+
+                            <section class="paywal-plan"
+                                style="padding:40px;background:linear-gradient(180deg, #00000000 0%, #00000000 10%, #00000010 100%)">
+
+                                <div id="subscribe-plus" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="plus-icon.svg" alt="plus icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Ya sos paciente?</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">Consulta Virtual
+                                                o
+                                                Presencial</p>
+                                            <div style="font-size: 36px; line-height: normal;">$2000</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Pedí tu turno</div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="subscribe-premium" class="plan popular">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-header">
+                                            Más popular
+                                        </div>
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="premium-icon.svg" alt="premium icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Primera consulta nutricional</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Nos presentamos </li>
+                                                <li> Anamnesis </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2500</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big w-100 top-30" style="background: #019ECF;">
+                                                Comenzá ahora
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="subscribe-team" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="team-icon.svg" alt="team icon">
+                                                <h1 class="text-capitalize">Plan Alimentario</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Individualizado y adaptado a tu condición de salud </li>
+                                                <li> Recetas - Fotos - Tips</li>
+                                                <li> Explicación de las recomendaciones </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2850</div>
+                                            <div style="font-size: 16px; line-height: normal;">/plan</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Solicitalo ya</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <p class="center" style="padding:10px;">No estas del todo seguro/a? Visitá nuestra <a
+                                    href="/pricing" class="anchor" target="_blank" style="color: #019ECF;">política</a>
+                                para más información.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- CONTACTO -->
-        <br>
+        <!-- <br>
         <div class="container-fluid">
             <div class="contacto" id="contacto">
                 <h2>Contacto</h2>
@@ -92,17 +220,16 @@
                         <p>Mensaje:</p>
                         <textarea name="message" placeholder="Coloque aquí su mensaje" required></textarea>
                     </label>
-                    <!-- your other form fields go here -->
                     <button type="submit">Send</button>
                 </form>
             </div>
         </div>
 
-        <div id="weather-widget"></div>
+        <div id="weather-widget"></div> -->
 
     </main>
 
-    <footer style="background-color: #d9d9d9; padding-top: 50px;">
+    <!-- <footer style="background-color: #d9d9d9; padding-top: 50px;">
         <div class="copyright">
             <div class="container">
                 <div class="row">
@@ -121,9 +248,8 @@
         </div>
         <div class="social-icons">
             <a href="https://www.instagram.com/angelina.nut/"><i class="fab fa-instagram"></i></a>
-            <!-- Agrega aquí más íconos de redes sociales -->
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
