@@ -2834,6 +2834,9 @@ html:not(.touch) .announce img.close:hover {
     justify-items: center
 }
 
+.plan-details {
+    margin-top: -10px;
+}
 .pricing-table .plan .plan-header {
     display: flex;
     flex-direction: column;

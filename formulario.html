@@ -16,117 +16,125 @@
   <main>
 
     <!-- Modal trigger button -->
-    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId" disabled>
       Mirá nuestros servicios!
     </button>
+ <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                <div class="modal-content">
 
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-      aria-labelledby="modalTitleId" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
-        <div class="modal-content">
-          
-            <div class="announce ani">
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  <img id="announce-closefb3b915e40ee" class="close" src="close.svg">
-                </button>
-              </div>
-              <div class="content" id="bounce-content" style="flex-direction: column;">
-                <div id="bounce-top" style="background-color:#fff8;
-                ;">
+                    <div class="announce ani">
+                        <div class="content" id="bounce-content" style="flex-direction: column;">
+                            <div id="bounce-top" style="background-color:#fff8;
+                  ;">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <img id="announce-closefb3b915e40ee" class="close" src="close.svg">
+                                </button>
 
-                  <div class="premium-tag" title="premium"><img src="premium.svg"></div>
+                                <div class="premium-tag" title="premium"><img src="premium.svg"></div>
 
-                  <h1 class="top-30">¡Fijate nuestros servicios!</h1>
-                  <p class="top-20" style="text-align:left;">Tendrás acceso a mucho material y consultas, solo
-                    selecciona la
-                    que más se adapte a tus necesidades y comienza a disfrutar de una vida sana cuanto antes!</p>
+                                <h1 class="top-30">¡Fijate nuestros servicios!</h1>
+                                <p class="top-20" style="text-align:left;">Tendrás acceso a mucho material y consultas,
+                                    solo
+                                    selecciona la
+                                    que más se adapte a tus necesidades y comienza a disfrutar de una vida sana cuanto
+                                    antes!</p>
 
+                            </div>
+
+                            <section class="paywal-plan"
+                                style="padding:40px;background:linear-gradient(180deg, #00000000 0%, #00000000 10%, #00000010 100%)">
+
+                                <div id="subscribe-plus" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="plus-icon.svg" alt="plus icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Ya sos paciente?</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">Consulta Virtual
+                                                o
+                                                Presencial</p>
+                                            <div style="font-size: 36px; line-height: normal;">$2000</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Pedí tu turno</div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div id="subscribe-premium" class="plan popular">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-header">
+                                            Más popular
+                                        </div>
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="premium-icon.svg" alt="premium icon" style="width: 24px;">
+                                                <h1 class="text-capitalize">Primera consulta nutricional</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Nos presentamos </li>
+                                                <li> Anamnesis </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2500</div>
+                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
+
+                                            <div class="button big w-100 top-30" style="background: #019ECF;">
+                                                Comenzá ahora
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="subscribe-team" class="plan">
+                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
+                                        <div class="plan-details">
+                                            <span style="display: flex; column-gap: 12px">
+                                                <img src="team-icon.svg" alt="team icon">
+                                                <h1 class="text-capitalize">Plan Alimentario</h1>
+                                            </span>
+
+                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
+                                            <ul>
+                                                <li> Individualizado y adaptado a tu condición de salud </li>
+                                                <li> Recetas - Fotos - Tips</li>
+                                                <li> Explicación de las recomendaciones </li>
+                                                <li> Educación nutricional </li>
+                                                <li> Recetas - Ideas - Tips </li>
+                                                <li> Bienestar integral </li>
+                                            </ul>
+                                            </p>
+                                            <div style="font-size: 36px; line-height: normal;">$2850</div>
+                                            <div style="font-size: 16px; line-height: normal;">/plan</div>
+
+                                            <div class="button big white w-100 top-30 text-default">Solicitalo ya</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <p class="center" style="padding:10px;">No estas del todo seguro/a? Visitá nuestra <a
+                                    href="/pricing" class="anchor" target="_blank" style="color: #019ECF;">política</a>
+                                para más información.</p>
+                            <br><br>
+                        </div>
+                    </div>
                 </div>
-
-                <section class="paywal-plan"
-                  style="padding:40px;background:linear-gradient(180deg, #00000000 0%, #00000000 10%, #00000010 100%)">
-
-                  <div id="subscribe-plus" class="plan">
-                    <div class="plan-details">
-                      <span style="display: flex; column-gap: 12px">
-                        <img src="plus-icon.svg" alt="plus icon" style="width: 24px;">
-                        <h1 class="text-capitalize">Ya sos paciente?</h1>
-                      </span>
-
-                      <p class="top-5" style="line-height: 22px; color: #3F4246;">Consulta Virtual o Presencial</p>
-                      <div style="font-size: 36px; line-height: normal;">$2000</div>
-                      <div style="font-size: 16px; line-height: normal;">/consulta</div>
-
-                      <div class="button big white w-100 top-30 text-default">Pedí tu turno</div>
-                    </div>
-                  </div>
-
-                  <div id="subscribe-premium" class="plan popular">
-                    <div class="plan-header">
-                      Más popular
-                    </div>
-                    <div class="plan-details">
-                      <span style="display: flex; column-gap: 12px">
-                        <img src="premium-icon.svg" alt="premium icon" style="width: 24px;">
-                        <h1 class="text-capitalize">Primera consulta nutricional</h1>
-                      </span>
-
-                      <p class="top-5" style="line-height: 22px; color: #3F4246;">
-                      <ul>
-                        <li> Nos presentamos </li>
-                        <li> Anamnesis </li>
-                        <li> Educación nutricional </li>
-                        <li> Educación nutricional </li>
-                        <li> Recetas - Ideas - Tips </li>
-                        <li> Bienestar integral </li>
-                      </ul>
-                      </p>
-                      <div style="font-size: 36px; line-height: normal;">$2500</div>
-                      <div style="font-size: 16px; line-height: normal;">/consulta</div>
-
-                      <div class="button big w-100 top-30" style="background: #019ECF;">
-                        Comenzá ahora
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="subscribe-team" class="plan">
-                    <div class="plan-details">
-                      <span style="display: flex; column-gap: 12px">
-                        <img src="team-icon.svg" alt="team icon">
-                        <h1 class="text-capitalize">Plan Alimentario</h1>
-                      </span>
-
-                      <p class="top-5" style="line-height: 22px; color: #3F4246;">
-                      <ul>
-                        <li> Individualizado y adaptado a tu condición de salud </li>
-                        <li> Recetas - Fotos - Tips</li>
-                        <li> Explicación de las recomendaciones </li>
-                        <li> Educación nutricional </li>
-                        <li> Recetas - Ideas - Tips </li>
-                        <li> Bienestar integral </li>
-                      </ul>
-                      </p>
-                      <div style="font-size: 36px; line-height: normal;">$2850</div>
-                      <div style="font-size: 16px; line-height: normal;">/plan</div>
-
-                      <div class="button big white w-100 top-30 text-default">Solicitalo ya</div>
-                    </div>
-                  </div>
-                </section>
-
-                <p class="center" style="padding:10px;">No estas del todo seguro/a? Visitá nuestra <a href="/pricing"
-                    class="anchor" target="_blank" style="color: #019ECF;">política</a> para más información.</p>
-                <br><br>
-              </div>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-
 
 
   </main>
