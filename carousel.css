@@ -102,14 +102,14 @@
 
 @media (max-width: 1110px) {
   #whoIAm {
-    background-image: url(https://angelinanut.github.io/nutricion/turnos.jpg);
+    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-1.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   #virtual {
-    background-image: url(https://angelinanut.github.io/nutricion/virtual.jpg);
+    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-3.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
   }
 
   #health {
-    background-image: url(https://angelinanut.github.io/nutricion/health.jpg);
+    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-2.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
