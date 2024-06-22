@@ -1,31 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Sitio web de Angelina Pérez, licenciada en nutrición. Encuentra información sobre nutrición, consejos de alimentación saludable y más.">
-    <meta name="keywords"
-        content="nutrición, nutricionista, alimentación saludable, licenciada en nutrición, intestino, Angelina Pérez, Paraná, Entre Ríos, Argentina, nutricionista cerca de mi, licenciada en nutrición cerca de mi">
-    <meta name="keywords"
-        content="Angelina, Pérez, Perez, nutricion, licenciada, cerca de mi, España, AngelinaNUT, alimentacion, alimentación, Parana, dieta, plan alimentario, facu pereyra, antiinflamatoria, salud intestinal, low carb, keto">
-    <meta name="keywords"
-        content="bajar de peso, microbiota, salud, bienestar, flaca, permeable, turnera, turnos, turnos de nutricionista, peso, adelgazar">
-    <meta name="author" content="Angelina Pérez">
-    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>AngelinaNUT - Licenciada en Nutrición</title>
 
+    <meta name="author" content="Facundo Wegher Osci">
+    <meta name="description" content="Licenciada en Nutrición María Angelina Pérez">
     <link rel="canonical" href="https://angelinanut.github.io/nutricion" />
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://angelinanut.github.io/nutricion/stylesGeli.css" rel="stylesheet">
-    <link href="https://angelinanut.github.io/nutricion/carousel.css" rel="stylesheet">
-    <!-- <link href="stylesGeli.css" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet"> -->
+    <meta name="robots" content="index" />
+    <meta name="keywords"
+        content="nutrición, nutricionista, salud, bienestar, alimentación, dietas, María Angelina Pérez, María Pérez, Paraná, consultas, asesoramiento">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
 
+    <style>
+        .hero {
+            transition: background-image 1s ease-in-out;
+        }
+
+        .hero-temp {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: 65%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-temp.fade-in {
+            opacity: 1;
+        }
+
+        .service-title {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .service-content {
+            display: none;
+        }
+
+        .service-title::after {
+            content: '▶';
+            transition: transform 0.3s;
+        }
+
+        .service-title.expanded::after {
+            transform: rotate(90deg);
+        }
+    </style>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -36,438 +74,200 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/e1212d5367.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="newstyles.css">
+    <link rel="stylesheet" href="carousel.css">
+
     <link rel="icon" type="image/png" href="iconAngelinaNUT.png">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMH21JRM98"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-GMH21JRM98');
-    </script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <h1 class="navbar-brand" href="#"> Nutrición <img height="30px" src="iconAngelinaNUT.png" alt="logo">
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navegador">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://angelinanut.github.io/nutricion/turnera.html">Turnos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://angelinanut.github.io/nutricion/index.html#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                    <!-- Modal trigger button -->
-                    <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId" disabled>
-                        Próximamente - Nuestros servicios!
-                    </button> -->
-                </div>
-
-            </div>
+        <h1 class="navbar-brand" href="#"> AngelinaNUT <img height="30px" src="iconAngelinaNUT.png" alt="logo">
+        </h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/nutricion/index.html">Inicio</a></li>
+                <li><a href="/nutricion/index.html#servicios">Servicios</a></li>
+                <li><a href="/nutricion/index.html#contacto">Contacto</a></li>
+                <li><a href="/nutricion/turnera.html">Turnera</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </nav>
     </header>
 
-
-    <main>
-        <!-- BANNER -->
-        <div class="banner">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" id="whoIAm" width="100%" height="100%"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
-                            focusable="false">
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-left">
-                                <h1>¿Quién soy?</h1>
-                                <p id="font1">Mi nombre es Angelina Pérez y soy Licenciada en Nutrición egresada de
-                                    la
-                                    Universidad Nacional del Litoral. Te acompaño para que mejores tu calidad de
-                                    vida.
-                                    No dudes en contactarte por cualquier consulta.
-                                </p>
-                                <p><a class="btn btn-lg btn-primary" href="#contacto" role="button">Contactate
-                                        conmigo</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" id="health" width="100%" height="100%"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
-                            focusable="false">
-                        </svg>
-
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Planes personalizados - Metas Saludables</h1>
-                                <p>Asesoramiento en hábitos alimentarios. Propuestas de recetarios para cada comida.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#recetario" role="button">Ver más</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- style="background: #ccc;
-                    cursor: not-allowed;
-                    opacity: 0.5;" -->
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" id="virtual" width="100%" height="100%"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
-                            focusable="false">
-                        </svg>
-
-                        <div class="container">
-                            <div class="carousel-caption text-right">
-                                <h1>Atención Online y Presencial</h1>
-                                <p>Vía google meet, para facilitarte el proceso. Entendemos las dificultades del día a
-                                    día y lo difícil que se puede volver tener tiempo para la salud.</p>
-                                <p class="coming-soon"><a class="btn btn-lg btn-primary" href="/nutricion/turnera.html"
-                                        role="button">Ir a la turnera</a></p>
-                                </p>
-                            </div>
+    <!-- BANNER -->
+    <div class="banner">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" id="whoIAm" width="100%" height="100%"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
+                        focusable="false">
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>¿Quién soy?</h1>
+                            <p id="font1">Mi nombre es Angelina Pérez y soy Licenciada en Nutrición egresada de
+                                la
+                                Universidad Nacional del Litoral. Te acompaño para que mejores tu calidad de
+                                vida.
+                                No dudes en contactarte por cualquier consulta.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="#contacto" role="button">Contactate
+                                    conmigo</a></p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" id="virtual" width="100%" height="100%"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img"
+                        focusable="false">
+                    </svg>
 
-        <div class="texto">
-            <br>
-            <div class="container-fluid" id="recetario">
-                <h2>Recetarios</h2>
-                <div class="container">
-
-                    <!-- <div class="box">
-                        <div class="imgBx">
-                            <img src="https://cpetruzzo.github.io/AngelinaNUT/images/familiar.png" alt="Familiar">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2></h2>
-                                <p>
-                                    <i style="font-size: small;">
-                                        "Buen día gracias por acompañamiento. Era super incómodo vivir con hinchazón de
-                                        panza, gracias por toda la información es de gran valor para mi y aprendí muchas
-                                        cosas. Super agradecida &#129330&#128513"
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://cpetruzzo.github.io/AngelinaNUT/images/familiar.png" alt="Familiar">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2></h2>
-                                <p>
-                                    <i style="font-size: small;">
-                                        "Lo que ha cambiado mi salud es notorio, es tremendo el cambio. Me siento
-                                        SALUDABLE"
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://cpetruzzo.github.io/AngelinaNUT/images/familiar.png" alt="Familiar">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2></h2>
-                                <p>
-                                    <i style="font-size: small;">
-                                        "Lo llevo asombrosamente bien"
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://angelinanut.github.io/nutricion/libreGluten.png"
-                                alt="libreDeGluten">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2>Recetario</h2>
-                                <p>Sin TACC</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://angelinanut.github.io/nutricion/familiar.png" alt="Familiar">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2>Recetario</h2>
-                                <p>Familiar</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://cdn.pixabay.com/photo/2022/09/10/17/27/loaf-7445434_960_720.jpg"
-                                alt="Integral">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2>Recetario</h2>
-                                <p>Integral</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="imgBx">
-                            <img src="https://cdn.pixabay.com/photo/2020/05/16/19/27/breakfast-5178866_960_720.jpg"
-                                alt="Dulces Saludables">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h2>Recetario</h2>
-                                <p>Dulces saludables</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <br><br>
-            <div class="about">
-                <p>
-                    <i>
-                        Estos son algunos de los recetarios que tenemos. Si te interesa saber sobre recetarios e ideas
-                        de menú no dudes en comunicarte conmigo a través de la sección de <a
-                            href="#contacto">Contacto</a>.
-                    </i>
-                </p>
-            </div>
-            <br>
-        </div>
-
-        <br>
-        <!-- CONTACTO -->
-        <br>
-        <div class="container-fluid">
-            <div class="contacto" id="contacto">
-                <h2>Contacto</h2>
-                <form action="https://formspree.io/f/mvoykjzp" method="POST">
-                    <label>
-                        <p>Su correo:</p>
-                        <input type="email" name="email" placeholder="Coloque aquí su email" required
-                            title="Debe ser un correo válido" autocomplete="email">
-                    </label>
-                    <label>
-                        <p>Mensaje:</p>
-                        <textarea name="message" placeholder="Coloque aquí su mensaje" required></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_XbCCtEfJwXlL5OHcj4pB9wmxZ94WdbYNb8_TZPpgVzCSfQ/viewform?embedded=true" width="640" height="1608" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> -->
-
-
-        <!-- Modal Body -->
-        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
-                <div class="modal-content">
-
-                    <div class="announce ani">
-                        <div class="content" id="bounce-content" style="flex-direction: column;">
-                            <div id="bounce-top" style="background-color:#fff8;
-                  ;">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                    <img id="announce-closefb3b915e40ee" class="close" src="close.svg">
-                                </button>
-
-                                <div class="premium-tag" title="premium"><img src="premium.svg"></div>
-
-                                <h1 class="top-30">¡Fijate nuestros servicios!</h1>
-                                <p class="top-20" style="text-align:left;">Tendrás acceso a mucho material y consultas,
-                                    solo
-                                    selecciona la
-                                    que más se adapte a tus necesidades y comienza a disfrutar de una vida sana cuanto
-                                    antes!</p>
-
-                            </div>
-
-                            <section class="paywal-plan"
-                                style="padding:40px;background:linear-gradient(180deg, #00000000 0%, #00000000 10%, #00000010 100%)">
-
-                                <div id="subscribe-plus" class="plan">
-                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
-                                        <div class="plan-details">
-                                            <span style="display: flex; column-gap: 12px">
-                                                <img src="plus-icon.svg" alt="plus icon" style="width: 24px;">
-                                                <h1 class="text-capitalize">Ya sos paciente?</h1>
-                                            </span>
-
-                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">Consulta Virtual
-                                                o
-                                                Presencial</p>
-                                            <div style="font-size: 36px; line-height: normal;">$2000</div>
-                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
-
-                                            <div class="button big white w-100 top-30 text-default">Pedí tu turno</div>
-
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div id="subscribe-premium" class="plan popular">
-                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
-                                        <div class="plan-header">
-                                            Más popular
-                                        </div>
-                                        <div class="plan-details">
-                                            <span style="display: flex; column-gap: 12px">
-                                                <img src="premium-icon.svg" alt="premium icon" style="width: 24px;">
-                                                <h1 class="text-capitalize">Primera consulta nutricional</h1>
-                                            </span>
-
-                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
-                                            <ul>
-                                                <li> Nos presentamos </li>
-                                                <li> Anamnesis </li>
-                                                <li> Educación nutricional </li>
-                                                <li> Educación nutricional </li>
-                                                <li> Recetas - Ideas - Tips </li>
-                                                <li> Bienestar integral </li>
-                                            </ul>
-                                            </p>
-                                            <div style="font-size: 36px; line-height: normal;">$2500</div>
-                                            <div style="font-size: 16px; line-height: normal;">/consulta</div>
-
-                                            <div class="button big w-100 top-30" style="background: #019ECF;">
-                                                Comenzá ahora
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div id="subscribe-team" class="plan">
-                                    <a href="https://angelinanut.github.io/nutricion/turnera.html">
-                                        <div class="plan-details">
-                                            <span style="display: flex; column-gap: 12px">
-                                                <img src="team-icon.svg" alt="team icon">
-                                                <h1 class="text-capitalize">Plan Alimentario</h1>
-                                            </span>
-
-                                            <p class="top-5" style="line-height: 22px; color: #3F4246;">
-                                            <ul>
-                                                <li> Individualizado y adaptado a tu condición de salud </li>
-                                                <li> Recetas - Fotos - Tips</li>
-                                                <li> Explicación de las recomendaciones </li>
-                                                <li> Educación nutricional </li>
-                                                <li> Recetas - Ideas - Tips </li>
-                                                <li> Bienestar integral </li>
-                                            </ul>
-                                            </p>
-                                            <div style="font-size: 36px; line-height: normal;">$2850</div>
-                                            <div style="font-size: 16px; line-height: normal;">/plan</div>
-
-                                            <div class="button big white w-100 top-30 text-default">Solicitalo ya</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </section>
-
-                            <p class="center" style="padding:10px;">No estas del todo seguro/a? Visitá nuestra <a
-                                    href="/pricing" class="anchor" target="_blank" style="color: #019ECF;">política</a>
-                                para más información.</p>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer style="background-color: #d9d9d9; padding-top: 50px;">
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="copyright-brief">
-                            <p>Copyright © <a href="http://AngelinaNUT.github.io/nutricion/"> AngelinaNUT</a>
-                                <br>
-                                All rights
-                                reserved
-                                <br>
-                                <a href="https://www.instagram.com/angelina.nut/" title="angelinanut">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path
-                                            d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
-                                        </path>
-                                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                                        <path d="M16.5 7.5l0 .01"></path>
-                                    </svg>
-                                </a>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Atención</h1>
+                            <p>Ofrecemos Atención Online y Presencial a través de Google Meet. <br>
+                                Te cuento un poco de cómo realizo las consultas ⭐🫶🏻👇🏻<br>
+                                Es un espacio cálido donde busco el confort para que podamos encontrar el camino que
+                                mejor va con lo que estas necesitando, te invito a que te animes a ese cambio que estas
+                                necesitando 💜</p>
+                            <p class="coming-soon"><a class="btn btn-lg btn-primary" href="/nutricion/turnera.html"
+                                    role="button">Agenda una cita</a></p>
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <p class="text-right">Realizado por <a href="https://www.wegher.com.ar" class="dema"
-                                target="_blank">FACUNDO WEGHER</a></p>
-                    </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+    </div>
+
+    <section id="definicion">
+        <h2>¿Qué es la Nutrición?</h2>
+        <p>La nutrición es la ciencia que estudia la relación entre los alimentos y la salud. Su objetivo principal es
+            mejorar la salud y el bienestar de las personas a través de una alimentación equilibrada y adecuada a cada
+            etapa de la vida.</p>
+    </section>
+    <section id="formacion" class="about-section">
+        <div class="about-content">
+            <h2>Acerca de mí</h2>
+            <p>Licenciada en Nutrición, especialista en patologías digestivas síndrome de intestino irritable, distensión abdominal, sibo, reflujo,
+                constipación, diarreas y en síntomas extradigestivos. <br>
+                Me formé en el <i>Hospital de Infecciosas</i> - <i>Francisco J Muñiz</i> en el área de cuidados intensivos.
+                Durante el 2023 me formé en trastornos de la conducta alimentaria.
+                En otra área que me desarrollo es el acompañamiento grupal como coach de hábitos.</p>
+        </div>
+        <div class="about-image">
+            <img src="fotoperfilange.jpg" alt="Foto de perfil de Angélica">
+        </div>
+    </section>
+    
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul class="services-list">
+            <li>
+                <div class="service-title">Consultas Nutricionales</div>
+                <div class="service-content">
+                    <p>Evaluación personalizada de tus necesidades alimenticias y elaboración de un plan de alimentación
+                        adecuado para ti.</p>
+                </div>
+            </li>
+            <li>
+                <div class="service-title">Asesoramiento a Empresas</div>
+                <div class="service-content">
+                    <p>Optimización del rendimiento y bienestar laboral a través de hábitos saludables. Mejora de la
+                        producción,
+                        reducción del ausentismo y aumento de la energía de los empleados.</p>
+                </div>
+            </li>
+            <li>
+                <div class="service-title">Talleres de Educación Alimentaria</div>
+                <div class="service-content">
+                    <p>Realización de talleres y charlas sobre alimentación saludable para diferentes grupos de edad y
+                        necesidades.</p>
+                </div>
+            </li>
+            <li>
+                <div class="service-title">Control y Seguimiento</div>
+                <div class="service-content">
+                    <p>Seguimiento continuo de tus progresos y ajustes necesarios en tu plan de alimentación.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2 class="section__title">Tu consulta:</h2>
+        <p class="desc">Envíame tu consulta y te responderé a la brevedad.</p>
+        <form class="contact__form" action="https://formspree.io/f/mvoykjzp" method="POST">
+            <label for=""></label>
+            <input class="field" type="text" name="Name" placeholder="Nombre" id="name" required>
+            <input class="field" type="email" name="_replyto" placeholder="Correo electrónico" id="email" required>
+            <input type="hidden" name="_next" value="//site.io/thanks.html" required>
+            <textarea class="field field--textarea" cols="30" rows="10" placeholder="Mensaje" id="message"
+                name="message" required></textarea>
+            <p class="fields-requirements">Todos los campos son requeridos.</p>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+        <p class="desc">
+            Batalla de Cepeda 427 - María Grande CP 3133</p>
+        <p class="desc">
+            <a style="text-decoration: none;" href="https://www.instagram.com/angelina.nut">
+                <img src="https://www.wegher.com.ar/images/ig.webp" alt="instagram-logo" width="20px" height="20px">
+                @angelina.nut
+            </a>
+        </p>
+        <p class="desc">Sitio Web realizado y diseñado por <a style="text-decoration: none; color: #252525;"
+                href="https://www.wegher.com.ar">
+                Facundo Wegher </a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AngelinaNUT. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('expanded');
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var serviceTitles = document.querySelectorAll('.service-title');
+
+            serviceTitles.forEach(function (title) {
+                title.addEventListener('click', function () {
+                    var content = this.nextElementSibling;
+                    this.classList.toggle('expanded');
+
+                    // Toggle the display of the service content
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
-
-    <!-- <script src="https://angelinanut.github.io/nutricion/modal.js"></script> -->
 </body>
 
 </html>

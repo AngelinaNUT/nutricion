@@ -34,6 +34,7 @@
 .carousel-item {
   height: 90vh;
   height: 90svh;
+  z-index: 0;
 }
 
 .carousel-item>img {
