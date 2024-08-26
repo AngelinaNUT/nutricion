@@ -21,6 +21,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="asesoramiento.css">
+    <link rel="stylesheet" href="ribbon.css">
     <style>
         .hero {
             transition: background-image 1s ease-in-out;
@@ -84,7 +86,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMH21JRM98"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-GMH21JRM98');
@@ -175,9 +177,11 @@
     <section id="formacion" class="about-section">
         <div class="about-content">
             <h2>Acerca de mí</h2>
-            <p>Licenciada en Nutrición, especialista en patologías digestivas síndrome de intestino irritable, distensión abdominal, sibo, reflujo,
+            <p>Licenciada en Nutrición, especialista en patologías digestivas síndrome de intestino irritable,
+                distensión abdominal, sibo, reflujo,
                 constipación, diarreas y en síntomas extradigestivos. <br>
-                Me formé en el <i>Hospital de Infecciosas</i> - <i>Francisco J Muñiz</i> en el área de cuidados intensivos.
+                Me formé en el <i>Hospital de Infecciosas</i> - <i>Francisco J Muñiz</i> en el área de cuidados
+                intensivos.
                 Durante el 2023 me formé en trastornos de la conducta alimentaria.
                 En otra área que me desarrollo es el acompañamiento grupal como coach de hábitos.</p>
         </div>
@@ -185,7 +189,7 @@
             <img src="fotoperfilange.jpg" alt="Foto de perfil de Angélica">
         </div>
     </section>
-    
+
     <section id="servicios">
         <h2>Servicios</h2>
         <ul class="services-list">
@@ -197,17 +201,37 @@
                 </div>
             </li>
             <li>
-                <div class="service-title">Asesoramiento a Empresas</div>
+                <div class="service-title" id="new">
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">Nuevo</div>
+                    </div>
+                    Asesoramiento a Empresas
+                </div>
                 <div class="service-content">
                     <p>Optimización del rendimiento y bienestar laboral a través de hábitos saludables. Mejora de la
                         producción,
                         reducción del ausentismo y aumento de la energía de los empleados.</p>
+                    <button class="btn btn-primary" id="open-popup">Solicitar Capacitación</button>
+                    <p class="info-text">Se le responderá a la brevedad.</p>
+                </div>
+            </li>
+            <li>
+                <div class="service-title">
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon-next">Próximamente</div>
+                    </div>
+                    Curso de Manipulador de Alimentos
+                </div>
+                <div class="service-content">
+                    <p>Dictado y evaluación del curso de manipulador de alimentos con validez nacional.</p>
+                    <!-- <button class="btn btn-primary" id="open-popup-manipulador" disabled>Próximamente</button> -->
                 </div>
             </li>
             <li>
                 <div class="service-title">Educación Alimentaria</div>
                 <div class="service-content">
-                    <p>Realización de talleres, charlas, vivos/zoom/meet sobre alimentación saludable para diferentes grupos de edad y
+                    <p>Realización de talleres, charlas, vivos/zoom/meet sobre alimentación saludable para diferentes
+                        grupos de edad y
                         necesidades.</p>
                 </div>
             </li>
@@ -275,10 +299,80 @@
             });
         });
     </script>
+    <script src="asesoramiento.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
+    <div id="popup-form" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Solicitar Capacitación</h2>
+            <form action="https://formspree.io/f/mvoykjzp" method="POST">
+                <input class="field" type="text" name="Empresa" placeholder="Nombre de la empresa" required>
+                <input class="field" type="text" name="Nombre del solicitante" placeholder="Nombre del solicitante"
+                    required>
+                <input class="field" type="text" name="Teléfono" placeholder="Número de telefono" required>
+                <input class="field" type="text" name="Email" placeholder="Correo electrónico" required>
+                <input class="field" type="number" name="Cantidad de Personas"
+                    placeholder="Cantidad de personas a capacitar" required>
+                <input class="field" type="text" name="Rubro" placeholder="Rubro de la empresa" required>
+                <textarea class="field" name="Objetivo" placeholder="Objetivo de la capacitación" required></textarea>
+                <textarea class="field" name="Perfil" placeholder="Perfil de los empleados a capacitar"
+                    required></textarea>
+                <select class="field" name="Modalidad" required>
+                    <option value="" disabled selected>Modalidad preferida</option>
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                    <option value="Híbrida">Híbrida</option>
+                </select>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <div id="popup-form-manipulador" class="popup">
+        <div class="popup-content">
+            <span class="close-popup-manipulador">&times;</span>
+            <h2>Solicitar Capacitación de Manipulador de Alimentos</h2>
+            <form action="https://formspree.io/f/mvoykjzp" method="POST">
+                <input class="field" type="text" name="Empresa" placeholder="Nombre de la empresa" required>
+                <input class="field" type="text" name="Nombre del solicitante" placeholder="Nombre del solicitante"
+                    required>
+                <input class="field" type="text" name="Teléfono" placeholder="Número de telefono" required>
+                <input class="field" type="text" name="Email" placeholder="Correo electrónico" required>
+                <input class="field" type="number" name="Cantidad de Personas"
+                    placeholder="Cantidad de personas a capacitar" required>
+                <input class="field" type="text" name="Rubro" placeholder="Rubro de la empresa" required>
+                <textarea class="field" name="Perfil" placeholder="Perfil de los empleados a capacitar"
+                    required></textarea>
+                <select class="field" name="Modalidad" required>
+                    <option value="" disabled selected>Modalidad preferida</option>
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                    <option value="Híbrida">Híbrida</option>
+                </select>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#new').addEventListener('click', function () {
+        const ribbon = document.querySelector('.ribbon');
+
+            // Añadir clase para sacudir
+            ribbon.style.animation = 'shake 0.5s ease-in-out';
+
+            // Desvanecer y luego ocultar el ribbon
+            setTimeout(() => {
+                ribbon.style.opacity = '0';
+                // ribbon.style.transform = 'scale(0.5)'; // Escala hacia abajo para desaparecer visualmente
+            }, 500); // El tiempo coincide con la duración de la animación de shake
+        });
+
+    </script>
 </body>
 
 </html>

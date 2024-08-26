@@ -379,3 +379,10 @@ iframe {
         margin-top: 0px;
     }
 }
+
+.info-text {
+    font-size: 0.7em;
+    font-style: italic;
+    color: var(--color-violeta);; /* Ajusta el color según sea necesario */
+    margin-top: 8px; /* Espacio entre el botón y el texto */
+}
