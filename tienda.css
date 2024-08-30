@@ -461,3 +461,7 @@ header {
     background-color: #dc3545 !important; /* Color de fondo rojo para el botón de eliminar */
     color: white !important;
 }
+
+input.quantity {
+    max-width: 45px;
+}
