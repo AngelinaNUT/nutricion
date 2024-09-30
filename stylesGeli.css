@@ -28,37 +28,6 @@
     min-height: 60vh;
 }
 
-#myCarousel {
-    min-height: 70vh;
-    background: linear-gradient(1turn, transparent, var(--color-violeta));
-}
-
-#whoIAm {
-    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-1.webp);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#virtual {
-    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-3.webp);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#health {
-    background-image: url(https://angelinanut.github.io/nutricion/angelinanut-slide-2.webp);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#turnExplanation{
-    max-width: 1000px;
-    width: 100%;
-}
-
 h1 {
     color: brown;
     margin: 10px 10px 10px 10px;

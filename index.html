@@ -216,15 +216,18 @@
                 </div>
             </li>
             <li>
-                <div class="service-title">
+                <div class="service-title" id="newAlim">
                     <div class="ribbon-wrapper">
-                        <div class="ribbon-next">Próximamente</div>
+                        <div class="ribbon" id="cursoAlim">Nuevo</div>
                     </div>
                     Curso de Manipulador de Alimentos
                 </div>
                 <div class="service-content">
                     <p>Dictado y evaluación del curso de manipulador de alimentos con validez nacional.</p>
-                    <!-- <button class="btn btn-primary" id="open-popup-manipulador" disabled>Próximamente</button> -->
+                    <button class="btn btn-primary" id="open-popup-manipulador">Solicitar Fecha de Curso de Manipulación
+                        Segura de Alimentos</button>
+                    <p class="info-text">Se le responderá a la brevedad para confirmar disponibilidad y coordinar fecha
+                        de capacitación.</p>
                 </div>
             </li>
             <li>
@@ -361,6 +364,20 @@
     <script>
         document.querySelector('#new').addEventListener('click', function () {
             const ribbon = document.querySelector('.ribbon');
+
+            // Añadir clase para sacudir
+            ribbon.style.animation = 'shake 0.5s ease-in-out';
+
+            // Desvanecer y luego ocultar el ribbon
+            setTimeout(() => {
+                ribbon.style.opacity = '0';
+                // ribbon.style.transform = 'scale(0.5)'; // Escala hacia abajo para desaparecer visualmente
+            }, 500); // El tiempo coincide con la duración de la animación de shake
+        });
+    </script>
+    <script>
+        document.querySelector('#newAlim').addEventListener('click', function () {
+            const ribbon = document.querySelector('#cursoAlim');
 
             // Añadir clase para sacudir
             ribbon.style.animation = 'shake 0.5s ease-in-out';

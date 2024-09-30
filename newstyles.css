@@ -292,8 +292,13 @@ footer {
     /* Verde más oscuro */
 }
 
+.banner h1 {
+    color: var(--color-texto-principal);
+}
+
 #myCarousel {
     min-height: 70vh;
+    /* background-color: #6b5b95; */
 }
 
 #whoIAm {
@@ -308,10 +313,6 @@ footer {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.banner h1 {
-    color: var(--color-texto-principal);
 }
 
 #health {
@@ -335,6 +336,10 @@ iframe {
     height: 100%;
     border-radius: 30px;
     margin-top: -30px;
+}
+
+#root>div>div>div>div>a {
+    display: none !important;
 }
 
 .about-section {
@@ -383,6 +388,9 @@ iframe {
 .info-text {
     font-size: 0.7em;
     font-style: italic;
-    color: var(--color-violeta);; /* Ajusta el color según sea necesario */
-    margin-top: 8px; /* Espacio entre el botón y el texto */
+    color: var(--color-violeta);
+    ;
+    /* Ajusta el color según sea necesario */
+    margin-top: 8px;
+    /* Espacio entre el botón y el texto */
 }
