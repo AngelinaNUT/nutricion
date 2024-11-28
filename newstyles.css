@@ -3,6 +3,21 @@
     src: url('High Spirited.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Mermaid';
+    src: url('mermaid/Mermaid1001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura/Futura/Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -15,6 +30,9 @@
     /* Rosa */
     --color-violeta: #6b5b95;
     /* Violeta */
+    --color-violeta-transparent: #a19ab48f;
+    /* Violeta */
+
     --color-gris-claro: #f4f4f4;
     /* Gris claro */
     --color-texto-principal: #333;
@@ -23,18 +41,26 @@
     /* Beige */
 }
 
+strong {
+    color: var(--color-violeta);
+}
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
     background-color: var(--color-gris-claro);
     color: var(--color-texto-principal);
     margin-bottom: 0;
 }
 
 header {
-    background-color: var(--color-violeta);
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    margin: auto;
+    background-color: var(--color-violeta-transparent);
     color: #FFF;
-    padding: 0 20px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +68,7 @@ header {
 }
 
 .logo {
-    font-family: 'High Spirited', cursive;
+    font-family: 'Mermaid', 'High Spirited', cursive;
     font-size: 2em;
     color: var(--color-rosa);
 }
@@ -58,8 +84,8 @@ nav {
     padding: 0;
     padding-top: 15px;
     display: flex;
-    gap: 20px;
     transition: max-height 0.3s ease-in-out;
+    gap: 70px;
 }
 
 .nav-links li {
@@ -70,6 +96,7 @@ nav {
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hamburger {
@@ -90,7 +117,7 @@ nav {
 }
 
 .hero h1 {
-    font-family: 'High Spirited', cursive;
+    font-family: 'Mermaid', 'High Spirited', cursive;
     font-size: 3em;
     margin-bottom: 100px;
     color: var(--color-rosa);
@@ -109,13 +136,13 @@ nav {
 
 section {
     padding: 50px 20px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 #definicion {
     max-width: 800px;
-    margin-bottom: 0px;
-    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     padding: 0px 20px;
 }
 
@@ -129,13 +156,43 @@ section {
 #servicios {
     max-width: 800px;
     margin-bottom: 0px;
+    margin-top: 55px;
     padding: 0px 20px;
 }
 
+#contacto {
+    margin-top: 55px;
+    margin-bottom: 0px;
+    background-color: #efbff0;
+    -webkit-mask-image: -webkit-linear-gradient(transparent, 1%, var(--color-rosa-hover));
+    mask-image: linear-gradient(transparent, 1%, var(--color-rosa-hover));
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239649b4' fill-opacity='0.42'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+a#link {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--color-violeta);
+    color: #efbff0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    font-family: 'Mermaid';
+    font-size: clamp(1.5rem, 2vw, 2.5vw);
+}
+
+#appoint {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #efbff0;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239649b4' fill-opacity='0.42'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 section h2 {
-    font-family: 'High Spirited', cursive;
+    font-family: 'Mermaid', 'High Spirited', cursive;
     font-size: 2.5em;
     color: var(--color-rosa);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 section ul {
@@ -149,18 +206,23 @@ section ul li {
     color: #fff;
     background-color: var(--color-rosa-hover);
     margin: 5px 0;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
+    /* -webkit-mask-image: -webkit-linear-gradient(var(--color-rosa-hover), transparent);
+    mask-image: linear-gradient(transparent, 2%, var(--color-rosa-hover)); */
 }
 
 footer {
     background-color: var(--color-violeta);
-    color: #FFF;
+    color: var(--color-gris-claro);
     text-align: center;
-    padding: 10px;
+    padding-bottom: 20px;
     width: 100%;
-    height: 10vh;
+    /* height: 15vh; */
     bottom: 0;
+    /* -webkit-mask-image: -webkit-linear-gradient(var(--color-violeta), transparent);
+    mask-image: linear-gradient(transparent, 20%, var(--color-violeta)); */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos para la sección de contacto */
@@ -212,11 +274,13 @@ footer {
 }
 
 .btn:hover {
-    background-color: #1d3a2b;
+    background-color: var(--color-violeta-transparent);
 }
 
 .navbar-brand {
     padding-top: 15px;
+    font-family: 'Futura', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -228,15 +292,19 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 12vh;
         right: 0;
-        background-color: var(--color-violeta);
+        background-color: var(--color-violeta-transparent);
         width: 100%;
         text-align: center;
         overflow: hidden;
         z-index: 3;
         max-height: 0;
         transition: max-height 0.3s ease-in-out;
+        gap: 15px;
+        /* -webkit-mask-image: -webkit-linear-gradient(var(--color-violeta-transparent), transparent);
+        mask-image: linear-gradient(var(--color-violeta-transparent), 100%, transparent); */
+
     }
 
     .nav-links.expanded {
@@ -257,6 +325,7 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Futura', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--color-rosa-hover);
     padding: 10px;
     border-radius: 5px;
@@ -285,9 +354,14 @@ footer {
 .btn-primary {
     background-color: var(--color-rosa);
     border-color: var(--color-rosa);
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     background-color: var(--color-rosa-hover);
     /* Verde más oscuro */
 }
@@ -343,6 +417,8 @@ iframe {
 }
 
 .about-section {
+    background-color: var(--color-violeta);
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -351,17 +427,24 @@ iframe {
 
 .about-content {
     flex: 1;
+    color: #f4f4f4;
+    padding: 50px 20px;
     margin-right: 20px;
+}
+
+.about-content h2 {
+    color: #de91b5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-image {
     flex: 1;
-    margin-top: 20px;
+    margin-top: 70px;
     text-align: center;
 }
 
 .about-image img {
-    max-width: 180px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -381,7 +464,8 @@ iframe {
     }
 
     .about-image {
-        margin-top: 0px;
+        margin-top: -50px !important;
+        padding-bottom: 50px;
     }
 }
 

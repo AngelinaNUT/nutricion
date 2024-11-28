@@ -23,17 +23,25 @@
   padding: 10px;
   border-radius: 15px 15px 15px 15px;
   background-color: rgba(255, 255, 255, .5);
+  -webkit-mask-image: -webkit-linear-gradient(var(--color-rosa-hover), transparent);
+  mask-image: linear-gradient(var(--color-rosa-hover), 98%, transparent);
+
+}
+
+
+.carousel-caption h1 {
+  font-family: 'Mermaid', system-ui
 }
 
 .carousel-caption p {
   color: black;
+  font-family: 'Futura', system-ui
 }
-
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 90vh;
-  height: 90svh;
+  height: 100vh;
+  height: 100svh;
   z-index: 0;
 }
 
